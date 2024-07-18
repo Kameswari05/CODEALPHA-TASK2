@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive viewport -->
+    <title>Social Media Platform</title> <!-- Page title -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external stylesheet -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Social Media Platform</h1> <!-- Logo and site title -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#profile">Profile</a></li> <!-- Navigation links -->
+                <li><a href="#feed">Feed</a></li>
+                <li><a href="#notifications">Notifications</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- User Profile Section -->
+        <section id="profile">
+            <div class="user-profile">
+                <img src="profile.jpg" alt="Profile Picture"> <!-- User profile picture -->
+                <h2>Username</h2> <!-- User's username -->
+                <p>Bio: Some information about the user</p> <!-- User's bio -->
+                <button>Edit Profile</button> <!-- Button to edit profile -->
+            </div>
+        </section>
+
+        <!-- Post Creation Section -->
+        <section id="post-create">
+            <form action="/create-post" method="POST">
+                <textarea name="post-content" placeholder="What's on your mind?"></textarea> <!-- Textarea for creating posts -->
+                <button type="submit">Post</button> <!-- Button to submit the post -->
+            </form>
+        </section>
+
+        <!-- Feed Section -->
+        <section id="feed">
+            <div class="post">
+                <div class="post-header">
+                    <img src="profile.jpg" alt="Profile Picture"> <!-- Profile picture of the post author -->
+                    <h3>Username</h3> <!-- Username of the post author -->
+                </div>
+                <p>Post content goes here...</p> <!-- Content of the post -->
+                <div class="post-actions">
+                    <button class="like-btn">Like</button> <!-- Button to like the post -->
+                    <button class="comment-btn">Comment</button> <!-- Button to comment on the post -->
+                </div>
+                <div class="comments">
+                    <div class="comment">
+                        <img src="profile.jpg" alt="Profile Picture"> <!-- Profile picture of the commenter -->
+                        <p><strong>Commenter:</strong> Comment text goes here...</p> <!-- Comment text -->
+                    </div>
+                    <!-- More comments -->
+                </div>
+            </div>
+            <!-- More posts -->
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Social Media Platform. All rights reserved.</p> <!-- Copyright notice -->
+    </footer>
+    
+    <script src="script.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>
